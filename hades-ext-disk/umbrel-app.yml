@@ -1,0 +1,40 @@
+manifestVersion: 1
+id: hades-ext-disk
+name: External Disks
+tagline: Home-screen widget for USB / IronWolf capacity
+icon: https://raw.githubusercontent.com/hm-webgeek/umbrel-hades-apps/main/hades-ext-disk/icon.svg
+category: files
+version: "1.0.0"
+port: 8477
+description: >-
+  Shows used and free space on Umbrel external drives, in the same
+  text-with-progress widget as umbrelOS internal storage.
+
+  Defaults to IRONWOLF-01 when that disk is mounted.
+developer: Hades
+website: https://github.com/hm-webgeek/umbrel-hades-apps
+submitter: Hades
+submission: https://github.com/hm-webgeek/umbrel-hades-apps
+repo: https://github.com/hm-webgeek/umbrel-hades-apps
+support: https://github.com/hm-webgeek/umbrel-hades-apps/issues
+gallery: []
+releaseNotes: >-
+  Initial release. Widget matches the built-in Storage widget layout.
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+widgets:
+  - id: storage
+    type: text-with-progress
+    refresh: 30s
+    endpoint: app:3000/widgets/storage
+    link: ""
+    example:
+      type: text-with-progress
+      link: ""
+      title: IRONWOLF-01
+      text: 1.3 TB
+      subtext: / 3.7 TB
+      progressLabel: 2.5 TB left
+      progress: 0.34
