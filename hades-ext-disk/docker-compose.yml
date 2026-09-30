@@ -1,0 +1,18 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: hades-ext-disk_app_1
+      APP_PORT: 3000
+
+  app:
+    image: python:3.12-alpine
+    user: "1000:1000"
+    init: true
+    restart: on-failure
+    stop_grace_period: 1m
+    volumes:
+      - ./server.py:/server.py:ro
+      - /home/umbrel/umbrel/external:/mnt/external:ro
+    command: ["python3", "/server.py"]
