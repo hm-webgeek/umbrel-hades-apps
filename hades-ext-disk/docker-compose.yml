@@ -7,6 +7,7 @@ services:
       APP_PORT: 3000
 
   app:
+    container_name: hades-ext-disk_app_1
     image: python:3.12-alpine
     user: "1000:1000"
     init: true
