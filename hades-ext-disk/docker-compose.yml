@@ -16,4 +16,6 @@ services:
     volumes:
       - ${APP_DATA_DIR}/server.py:/server.py:ro
       - /home/umbrel/umbrel/external:/mnt/external:ro
+      - /opt/umbreld/ui/assets/wallpapers:/mnt/wallpapers:ro
+      - /home/umbrel/umbrel/umbrel.yaml:/mnt/umbrel.yaml:ro
     command: ["python3", "/server.py"]
