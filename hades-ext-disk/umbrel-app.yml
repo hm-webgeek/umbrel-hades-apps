@@ -4,7 +4,7 @@ name: External Disks
 tagline: Home-screen widget for USB / IronWolf capacity
 icon: https://raw.githubusercontent.com/hm-webgeek/umbrel-hades-apps/main/hades-ext-disk/icon.svg
 category: files
-version: "1.0.1"
+version: "1.0.2"
 port: 8477
 description: >-
   Shows used and free space on Umbrel external drives, in the same
@@ -19,7 +19,7 @@ repo: https://github.com/hm-webgeek/umbrel-hades-apps
 support: https://github.com/hm-webgeek/umbrel-hades-apps/issues
 gallery: []
 releaseNotes: >-
-  App page now matches the Live Usage storage modal (frosted panel, tabs, progress).
+  Live Usage-style window: system wallpaper (blurred), large opaque modal, disk tiles.
 dependencies: []
 path: ""
 defaultUsername: ""
